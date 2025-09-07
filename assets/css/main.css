@@ -3036,3 +3036,168 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Our Approach Section Styles */
+.approach .approach-card {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+
+.approach .approach-card.featured {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border: 2px solid var(--accent-color);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.approach .approach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.approach .approach-card.featured:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.approach .approach-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.approach .approach-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.8rem;
+  color: var(--contrast-color);
+  transition: all 0.3s ease;
+}
+
+.approach .approach-card:hover .approach-icon {
+  transform: rotate(10deg);
+}
+
+.approach .approach-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0;
+}
+
+.approach .approach-content {
+  margin-bottom: 25px;
+}
+
+.approach .approach-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.approach .features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.approach .features-list li {
+  padding: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.approach .features-list .bi-check-circle-fill {
+  color: var(--accent-color);
+  margin-right: 10px;
+  font-size: 1.1rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.approach .custom-solution-cta {
+  background: var(--surface-color);
+  padding: 40px;
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.approach .custom-solution-cta h3 {
+  color: var(--heading-color);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.approach .custom-solution-cta p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+}
+
+/* Button styles */
+.approach .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.approach .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 20%);
+  border-color: color-mix(in srgb, var(--accent-color), black 20%);
+  transform: translateY(-2px);
+}
+
+.approach .btn-outline-primary {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.approach .btn-outline-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+.approach .btn-lg {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .approach .approach-card.featured {
+    transform: scale(1);
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach .approach-card {
+    margin-bottom: 30px;
+  }
+  
+  .approach .custom-solution-cta {
+    padding: 30px 20px;
+  }
+}
